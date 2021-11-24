@@ -1,0 +1,140 @@
+.conteudo-principal{
+    width: 85%;
+    margin: 5% auto;
+}
+.secao-apresentacao-site{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.divisao-apresentacao{
+    width: 65%;
+}
+.imagem-secao-apresentacao{
+    width: 25%;
+}
+.divisao-apresentacao
+.divisao-topo-secao-apresentacao,
+.titulo-divisao-apresentacao,
+.texto-divisao-apresentacao,
+.formulario-divisao-apresentacao{
+    margin: 20px 0;
+}
+.formulario-divisao-apresentacao{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.formulario-divisao-apresentacao
+.email-visitante-site{
+    width: 68%;
+    padding: 18px 20px;
+    border: solid 1px #C9C9C9;
+    border-radius: 5px;
+}
+.formulario-divisao-apresentacao
+.botao-enviar-email-visitante-site{
+    width: 30%;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: rgb(55,40,101);
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+.formulario-divisao-apresentacao
+.botao-enviar-email-visitante-site:hover{
+    transform: scale(1.05);
+    opacity: .9;
+}
+.formulario-divisao-apresentacao
+.feedback-enviar-email-visitante-site{
+    margin-top: 5px;
+}
+.divisao-topo-secao-apresentacao{
+    background-color: rgb(55,40,101);
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+}
+.divisao-topo-secao-apresentacao .texto-topo-apresentacao{
+    color: #FFFFFF;
+}
+.divisao-topo-secao-apresentacao .texto-topo-apresentacao a{
+    color: #FFFFFF;
+}
+.titulo-divisao-apresentacao{
+    font-size: 40px;
+}
+.companhias-utilizam-produto{
+    margin: 5% 0;
+}
+.companhias-utilizam-produto
+.companhias-utilizam-produto-lista{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 10px 0;
+}
+.companhias-utilizam-produto
+.companhias-utilizam-produto-lista
+.companhias-utilizam-produto-lista-item{
+    margin-right: 15px;
+}
+.titulo-divisao-apresentacao,
+.texto-divisao-apresentacao,
+.texto-companhias-utilizam-produto{
+    color: rgb(84,84,84);
+}
+/*
+Versão para celulares
+*/
+@media only screen and (max-width: 320px){
+    .companhias-utilizam-produto
+    .companhias-utilizam-produto-lista
+    .companhias-utilizam-produto-lista-item:nth-child(4n){
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .divisao-apresentacao{
+        width: 100%;
+    }
+    .imagem-secao-apresentacao{
+        display: none;
+    }
+    .divisao-topo-secao-apresentacao{
+        width: 100%;
+    }
+    .titulo-divisao-apresentacao,
+    .texto-divisao-apresentacao{
+        text-align: center;
+    }
+    .titulo-divisao-apresentacao{
+        font-size: 30px;
+    }
+    .divisao-apresentacao
+    .divisao-topo-secao-apresentacao,
+    .titulo-divisao-apresentacao,
+    .texto-divisao-apresentacao,
+    .formulario-divisao-apresentacao{
+        margin: 30px 0;
+    }
+    .formulario-divisao-apresentacao{
+        width: 100%;
+    }
+    .formulario-divisao-apresentacao
+    .email-visitante-site{
+        width: 100%;
+    }
+    .formulario-divisao-apresentacao
+    .botao-enviar-email-visitante-site{
+        width: 100%;
+        margin-top: 12px;
+    }
+}

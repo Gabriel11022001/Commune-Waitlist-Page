@@ -1,0 +1,76 @@
+.cabecalho-pagina{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2%;
+    width: 85%;
+    margin: 0 auto;
+}
+.cabecalho-pagina-botao-controla-menu{
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+.cabecalho-pagina-barra-navegacao{
+    margin: 10px 0;
+}
+.cabecalho-pagina-barra-navegacao .cabecalho-pagina-barra-navegacao-lista{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.cabecalho-pagina-barra-navegacao
+.cabecalho-pagina-barra-navegacao-lista
+.cabecalho-pagina-barra-navegacao-lista-item{
+    margin: 0 10px;
+}
+.cabecalho-pagina-barra-navegacao
+.cabecalho-pagina-barra-navegacao-lista
+.cabecalho-pagina-barra-navegacao-lista-item a{
+    text-decoration: none;
+    color: rgb(84,84,84);
+}
+.cabecalho-pagina-barra-navegacao
+.cabecalho-pagina-barra-navegacao-lista
+.cabecalho-pagina-barra-navegacao-lista-item:last-child a{
+    color: #FFFFFF;
+    background-color: rgb(55,40,101);
+    padding: 15px 17px;
+    border-radius: 5px;
+    transition: .4s opacity ease-in-out;
+}
+.cabecalho-pagina-barra-navegacao
+.cabecalho-pagina-barra-navegacao-lista
+.cabecalho-pagina-barra-navegacao-lista-item:last-child a:hover{
+    opacity: .8;
+}
+/*
+Versão para celulares
+*/
+@media only screen and (max-width: 1024px){
+    .cabecalho-pagina{
+        padding: 8% 4%;
+    }
+    .cabecalho-pagina-barra-navegacao{
+        width: 100%;
+        display: none;
+    }
+    .cabecalho-pagina-barra-navegacao.menu-ativo{
+        display: block;
+    }
+    .cabecalho-pagina-logo{
+        flex-grow: 1;
+    }
+    .cabecalho-pagina-barra-navegacao .cabecalho-pagina-barra-navegacao-lista{
+        flex-direction: column;
+    }
+    .cabecalho-pagina-barra-navegacao
+    .cabecalho-pagina-barra-navegacao-lista
+    .cabecalho-pagina-barra-navegacao-lista-item{
+        margin: 15px 0;
+    }
+    .cabecalho-pagina-botao-controla-menu{
+        display: block;
+    }
+}
